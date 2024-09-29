@@ -1,0 +1,120 @@
+/* Typography Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Font variables */
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  /* Color variables */
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A43312;
+  --accent2-color: #381D2A;
+
+  /* Font colors */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */
+  --headline-color-on-color: #E7C24F;  /* headlines on a colored background */
+  --paragraph-color-on-white: #381D2A; /* paragraph text on a white background */
+  --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */
+  --paragraph-background-color: #A43312; /* background for colored paragraph */
+}
+
+/* General Styles */
+body {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  margin: 20px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+}
+
+h1, h2 {
+  color: var(--headline-color-on-white);
+}
+
+h3, h4 {
+  color: var(--headline-color-on-color);
+}
+
+/* Table Styles */
+table.colors {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table.colors th, table.colors td {
+  border: 1px solid var(--secondary-color);
+  text-align: center;
+  padding: 10px;
+}
+
+table.colors td.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+table.colors td.secondary {
+  background-color: var(--secondary-color);
+}
+
+table.colors td.accent1 {
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+table.colors td.accent2 {
+  background-color: var(--accent2-color);
+  color: white;
+}
+
+/* Paragraph styles */
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+  padding: 10px;
+}
+
+/* Navigation Styles */
+nav a {
+  margin: 0 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Site Map */
+.sitemap {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sitemap div {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
