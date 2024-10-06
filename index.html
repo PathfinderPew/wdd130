@@ -4,105 +4,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>White Water Rafting Site Plan</title>
-  <link type="text/css" rel="stylesheet" href="styles/site-plan-rafting.css" />
+  <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+  <link type="text/css" rel="stylesheet" href="styles/home.css" />
 </head>
 
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>White Water Rafting Site Plan</h1>
-    <h2>Brandon Pew</h2>
-    <h2>WDD 130-01</h2>
-    <!-- Updated site name, name, and section number -->
-  </header>
-  <main>
-    <hr />
-    <h2>Overview</h2>
-    <h3>Purpose</h3>
-    <p>The purpose of this website is to promote our white water rafting services, provide safety information, and offer easy booking options for adventure enthusiasts looking for thrilling rafting experiences.</p>
-    <!-- Updated purpose statement -->
-
-    <h3>Audience</h3>
-    <p>This website targets outdoor enthusiasts aged 18-55, families planning group activities, and thrill-seekers interested in white water rafting. The audience values safety, excitement, and professional guidance while planning their adventures.</p>
-    <!-- Updated audience statement -->
-
-    <hr />
-    <h2>Branding</h2>
-    <h3>Website Logo</h3>
-    <img src="images/rafting_logo.png" alt="White Water Rafting Logo" />
-    <!-- Updated local logo image path -->
-
-    <hr />
-    <h2>Style Guide</h2>
-
-    <h3>Color Palette</h3>
-    <p>Palette URL:</p>
-    <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a" target="_blank">https://coolors.co/396e94-e7c24f-a43312-381d2a</a>
-    <!-- Updated palette URL -->
-
-    <table class="colors">
-      <tr>
-        <th>Primary</th>
-        <th>Secondary</th>
-        <th>Accent 1</th>
-        <th>Accent 2</th>
-      </tr>
-      <tr>
-        <td class="primary">#396E94</td>
-        <td class="secondary">#E7C24F</td>
-        <td class="accent1">#A43312</td>
-        <td class="accent2">#381D2A</td>
-      </tr>
-    </table>
-    <!-- Updated color palette with chosen colors -->
-
-    <h3>Typography</h3>
-    <h4>
-      Heading Font: Roboto
-    </h4>
-    <h4>
-      Paragraph Font: Open Sans
-    </h4>
-    <!-- Updated fonts -->
-
-    <h3>Normal paragraph example</h3>
-    <p>
-      The best Whitewater Rafting in Colorado, White Water Rafting Company offers rafting on the Colorado and Roaring Fork Rivers in Glenwood Springs. Since 1974, we have been family owned and operated, rafting the Shoshone section of Glenwood Canyon and beyond.
-    </p>
-    <h3>Colored paragraph example</h3>
-    <p class="colored">
-      Trips vary from mild and great for families, to trips exclusively for physically fit and experienced rafters. No matter what type of river adventures you are seeking, White Water Rafting Company can make it happen for you.
-    </p>
-
-    <h3>Navigation</h3>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="images/rafting_logo.png" alt="Dry Oar Logo" />
+    </a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="#">Rafting Tours</a>
-      <a href="#">Contact Us</a>
+      <a href="rafting-tours.html">Rafting Tours</a>
+      <a href="site-plan-rafting.html">Site Plan</a>
+      <a href="contactus.html">Contact Us</a>
     </nav>
-    <!-- Updated navigation with actual links -->
+  </header>
 
-    <hr />
-    <h2>Site Map</h2>
-    <div class="sitemap">
-      <div class="sm-home">Home</div>
-      <div class="sm-page2">Rafting Tours</div>
-      <div class="sm-page3">Contact Us</div>
-
-      <div class="top">&nbsp;</div>
-      <div class="left">&nbsp;</div>
-      <div class="right">&nbsp;</div>
+  <!-- Hero Section -->
+  <div id="hero">
+    <div id="hero-box">
+      <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting" />
     </div>
+    <section id="hero-msg">
+      <h1 class="home-title">Have An Adventure</h1>
+      <h4>Make Memories with Dry Oar</h4>
+      <div class="button-box">
+        <a class="book" href="contactus.html">Book Now</a>
+      </div>
+    </section>
+  </div>
 
-    <hr />
-    <h2>Wireframes</h2>
+  <!-- Main Content Section: Features Grid -->
+  <main class="home-grid">
+    <!-- River Card -->
+    <section class="rivers-card">
+      <img class="card-img" src="images/rivers.jpg" alt="River in forest" />
+      <img class="icon" src="images/river_icon.png" alt="River icon" />
+      <h2>Rivers</h2>
+    </section>
 
-    <h3>Home</h3>
-    <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="home page wireframe" />
+    <!-- Camping Card -->
+    <section class="camping-card">
+      <img class="card-img" src="images/camping.jpg" alt="Tent in mountains" />
+      <img class="icon" src="images/fire_icon.png" alt="Fire icon" />
+      <h2>Camping</h2>
+    </section>
 
-    <h3>Rafting Tours</h3>
-    <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_page2.png" alt="rafting tours page wireframe" />
+    <!-- Rapids Card -->
+    <section class="rapids-card">
+      <img class="card-img" src="images/rapids.jpg" alt="Rafting boat" />
+      <img class="icon" src="images/oars.png" alt="Oars icon" />
+      <h2>Rapids</h2>
+    </section>
+
+    <!-- Highlighted Image and Content Section -->
+    <section class="msg">
+      <img class="mountains" src="images/mountains.jpg" alt="Misty mountains" />
+      <h2>More Than Just The Thrill</h2>
+      <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+      <a class='join' href="rivers.html">Join Us</a>
+    </section>
   </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Dry Oar &copy; 2024 - Brandon Pew</p>
+    <nav>
+      <a href="site-plan-rafting.html">Site Plan</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+    <div class="social">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook icon" />
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter icon" />
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram icon" />
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>
