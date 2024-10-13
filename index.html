@@ -5,88 +5,98 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
-  <link type="text/css" rel="stylesheet" href="styles/home.css" />
+  <!-- Global styles for the entire site -->
+  <link type="text/css" rel="stylesheet" href="styles/styles.css">
+  <!-- Specific styles for the home page -->
+  <link type="text/css" rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header>
-    <a id="logo_link" href="index.html">
-      <img class="logo" src="images/rafting_logo.png" alt="Dry Oar Logo" />
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="rafting-tours.html">Rafting Tours</a>
-      <a href="site-plan-rafting.html">Site Plan</a>
-      <a href="contactus.html">Contact Us</a>
-    </nav>
-  </header>
+  <div id="content"> <!-- Wrapper for the entire page content -->
 
-  <!-- Hero Section -->
-  <div id="hero">
-    <div id="hero-box">
-      <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting" />
-    </div>
-    <section id="hero-msg">
-      <h1 class="home-title">Have An Adventure</h1>
-      <h4>Make Memories with Dry Oar</h4>
-      <div class="button-box">
-        <a class="book" href="contactus.html">Book Now</a>
+    <!-- Header Section -->
+    <header>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/rafting_logo.png" alt="Dry Oar Logo" />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rafting-tours.html">Rafting Tours</a>
+        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="hero">
+      <div id="hero-box">
+        <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting" />
       </div>
-    </section>
-  </div>
-
-  <!-- Main Content Section: Features Grid -->
-  <main class="home-grid">
-    <!-- River Card -->
-    <section class="rivers-card">
-      <img class="card-img" src="images/rivers.jpg" alt="River in forest" />
-      <img class="icon" src="images/river_icon.png" alt="River icon" />
-      <h2>Rivers</h2>
-    </section>
-
-    <!-- Camping Card -->
-    <section class="camping-card">
-      <img class="card-img" src="images/camping.jpg" alt="Tent in mountains" />
-      <img class="icon" src="images/fire_icon.png" alt="Fire icon" />
-      <h2>Camping</h2>
-    </section>
-
-    <!-- Rapids Card -->
-    <section class="rapids-card">
-      <img class="card-img" src="images/rapids.jpg" alt="Rafting boat" />
-      <img class="icon" src="images/oars.png" alt="Oars icon" />
-      <h2>Rapids</h2>
-    </section>
-
-    <!-- Highlighted Image and Content Section -->
-    <section class="msg">
-      <img class="mountains" src="images/mountains.jpg" alt="Misty mountains" />
-      <h2>More Than Just The Thrill</h2>
-      <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-      <a class='join' href="rivers.html">Join Us</a>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>Dry Oar &copy; 2024 - Brandon Pew</p>
-    <nav>
-      <a href="site-plan-rafting.html">Site Plan</a>
-      <a href="contactus.html">Contact Us</a>
-    </nav>
-    <div class="social">
-      <a href="https://facebook.com">
-        <img src="images/facebook.png" alt="Facebook icon" />
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.png" alt="Twitter icon" />
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.png" alt="Instagram icon" />
-      </a>
+      <section id="hero-msg">
+        <h1 class="home-title">Have An Adventure</h1>
+        <h4>Make Memories with Dry Oar</h4>
+        <div class="button-box">
+          <a class="book" href="contactus.html">Book Now</a>
+        </div>
+      </section>
     </div>
-  </footer>
+
+    <!-- Main Content Section: Features Grid -->
+    <main class="home-grid">
+      <!-- River Card -->
+      <section class="rivers-card">
+        <img class="card-img" src="images/rivers.png" alt="River in forest" />
+        <img class="icon" src="images/river_icon.png" alt="River icon" />
+        <h2>Rivers</h2>
+      </section>
+
+      <!-- Camping Card -->
+      <section class="camping-card">
+        <img class="card-img" src="images/camping.png" alt="Tent in mountains" />
+        <img class="icon" src="images/fire_icon.png" alt="Fire icon" />
+        <h2>Camping</h2>
+      </section>
+
+      <!-- Rapids Card -->
+      <section class="rapids-card">
+        <img class="card-img" src="images/rapids.png" alt="Rafting boat" />
+        <img class="icon" src="images/oars.png" alt="Oars icon" />
+        <h2>Rapids</h2>
+      </section>
+
+      <!-- Background Div and Main Image Section -->
+      <div id="background"></div> <!-- Background div for additional styling -->
+
+      <!-- Highlighted Image and Content Section -->
+      <section class="msg">
+        <img class="mountains" src="images/mountains.png" alt="Misty mountains" />
+        <h2>More Than Just The Thrill</h2>
+        <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+        <a class='join' href="rivers.html">Join Us</a>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Dry Oar &copy; 2024 - Brandon Pew</p>
+      <nav>
+        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="Facebook icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="Twitter icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram icon" />
+        </a>
+      </div>
+    </footer>
+
+  </div> <!-- End of content wrapper -->
 </body>
 
 </html>
