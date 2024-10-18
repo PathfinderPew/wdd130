@@ -1,7 +1,6 @@
 /* Import Typography Styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
-/* Variables */
 :root {
   /* Font variables */
   --heading-font: 'Roboto', sans-serif;
@@ -25,21 +24,22 @@
   --button-hover-bg: #381D2A;
 }
 
-/* General Styles */
+/* General Reset */
 body {
   font-family: var(--paragraph-font);
+  font-size: 22px; /* Set default font size */
   color: var(--paragraph-color-on-white);
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
 /* #content container */
 #content {
   max-width: 1600px; /* Limit the width of the entire page */
-  margin: 0 auto; /* Center the content on large screens */
+  margin: 0 auto; /* Center the content */
 }
 
-/* Header Styles */
+/* Header */
 header {
   background-color: var(--primary-color);
   color: white;
@@ -50,7 +50,8 @@ header {
 }
 
 header img.logo {
-  width: 80px; /* Set the logo width */
+  width: 80px; /* Set logo width */
+  padding-top: 5px; /* Add padding for the logo */
   margin-left: 20px;
 }
 
@@ -63,6 +64,7 @@ header nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 35px; /* Add padding around nav links */
 }
 
 header nav a:hover {
@@ -99,7 +101,9 @@ header nav a:hover {
 }
 
 #hero-msg h1 {
-  font-size: 2.5rem;
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif; /* Custom font for the title */
+  font-size: 2em; /* Adjust size to be twice the default */
+  margin-top: 10px; /* Add margin to the title */
 }
 
 #hero-msg h4 {
@@ -108,11 +112,12 @@ header nav a:hover {
 
 .button-box a.book {
   background-color: var(--button-bg);
-  padding: 10px 20px;
+  padding: 15px 30px; /* Add padding to the button */
   text-decoration: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 5px; /* Add rounded corners */
   font-weight: bold;
+  margin-top: 50px; /* Add margin above the button */
 }
 
 .button-box a.book:hover {
@@ -142,26 +147,30 @@ header nav a:hover {
 .home-grid img.card-img {
   width: 100%;
   border-radius: 10px;
+  border: 10px solid var(--secondary-color); /* Add border to card images */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .home-grid img.icon {
-  width: 80px; /* Set the icon width to 80px */
-  margin: 10px 0;
+  width: 80px; /* Set icon width */
+  padding-top: 10px; /* Add padding to the icons */
 }
 
 .home-grid h2 {
   color: var(--accent1-color);
 }
 
-/* #background styles */
+/* Background */
 #background {
-  height: 725px; /* Fixed height for background */
+  height: 725px;
 }
 
 /* Main Image and Message Section */
 .msg {
   text-align: center;
   margin: 40px 0;
+  padding: 35px; /* Add padding to the message section */
+  line-height: 1.5em; /* Add line height for readability */
 }
 
 .msg img.mountains {
@@ -177,6 +186,7 @@ header nav a:hover {
 .msg p {
   max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 15px; /* Add padding to the bottom of the paragraph */
   color: var(--paragraph-color-on-white);
 }
 
@@ -185,20 +195,21 @@ header nav a:hover {
   background-color: var(--button-bg);
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 30px; /* Add padding to the button */
+  border-radius: 5px; /* Add rounded corners */
 }
 
 .msg a.join:hover {
   background-color: var(--button-hover-bg);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 50px; /* Add padding to the footer */
+  margin-top: 200px; /* Add margin above the footer */
 }
 
 footer a {
@@ -213,5 +224,5 @@ footer a:hover {
 
 footer .social img {
   height: 30px;
-  margin: 0 10px;
+  padding-top: 15px; /* Add padding to social icons */
 }
