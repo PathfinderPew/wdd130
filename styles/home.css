@@ -1,3 +1,74 @@
+/* Import Typography Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Variables */
+:root {
+  /* Font variables */
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  /* Color variables */
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A43312;
+  --accent2-color: #381D2A;
+
+  /* Font colors */
+  --headline-color-on-white: #396E94;
+  --headline-color-on-color: #E7C24F;
+  --paragraph-color-on-white: #381D2A;
+  --paragraph-color-on-color: #FFFFFF;
+  --paragraph-background-color: #A43312;
+
+  /* Button colors */
+  --button-bg: #A43312;
+  --button-hover-bg: #381D2A;
+}
+
+/* General Styles */
+body {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* #content container */
+#content {
+  max-width: 1600px; /* Limit the width of the entire page */
+  margin: 0 auto; /* Center the content on large screens */
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo {
+  width: 80px; /* Set the logo width */
+  margin-left: 20px;
+}
+
+header nav {
+  margin-right: 20px;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: var(--secondary-color);
+}
+
 /* Hero Section */
 #hero {
   position: relative;
@@ -74,12 +145,17 @@
 }
 
 .home-grid img.icon {
-  height: 50px;
+  width: 80px; /* Set the icon width to 80px */
   margin: 10px 0;
 }
 
 .home-grid h2 {
   color: var(--accent1-color);
+}
+
+/* #background styles */
+#background {
+  height: 725px; /* Fixed height for background */
 }
 
 /* Main Image and Message Section */
@@ -115,4 +191,27 @@
 
 .msg a.join:hover {
   background-color: var(--button-hover-bg);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: var(--accent1-color);
+}
+
+footer .social img {
+  height: 30px;
+  margin: 0 10px;
 }
