@@ -1,14 +1,38 @@
-/* Hero Section (if applicable) */
+/* Root Variables for Consistency */
+:root {
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A43312;
+  --accent2-color: #381D2A;
+}
+
+/* General Reset */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #381D2A;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Hero Section (for the Site Plan if applicable) */
 #hero {
-  position: relative;
-  text-align: center;
-  margin: 20px 0;
-  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
   padding: 30px;
 }
 
 #hero-box {
-  max-width: 100%;
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+  color: white;
 }
 
 #hero img#hero-img {
@@ -16,33 +40,15 @@
   border-radius: 10px;
 }
 
-#hero-msg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-#hero-msg h1 {
-  font-size: 2.5rem;
-}
-
-#hero-msg h4 {
-  margin: 10px 0;
-}
-
-/* Main Grid Section */
+/* Main Grid Section for Content */
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: 20px;
   margin: 20px;
 }
 
+/* Cards Styling */
 .home-grid section {
   text-align: center;
   border: 2px solid var(--secondary-color);
@@ -58,13 +64,43 @@
 .home-grid img.card-img {
   width: 100%;
   border-radius: 10px;
+  border: 10px solid var(--secondary-color);
+  box-sizing: border-box;
 }
 
-.home-grid img.icon {
-  height: 50px;
-  margin: 10px 0;
+/* Flexbox for Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 50px;
+  background-color: var(--primary-color);
 }
 
-.home-grid h2 {
-  color: var(--accent1-color);
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  #hero, .main-grid {
+    display: block;
+    height: auto;
+  }
+  nav, footer {
+    flex-direction: column;
+  }
+  nav a, footer a {
+    display: block;
+    padding: 15px;
+  }
+  #hero {
+    margin-top: 0;
+  }
+  #hero-msg {
+    margin-top: 0;
+  }
+  .home-title {
+    font-size: 25px;
+  }
+  .home-grid section {
+    margin: 20px auto;
+    width: 80%;
+  }
 }
