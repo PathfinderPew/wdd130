@@ -17,7 +17,6 @@
   --headline-color-on-color: #E7C24F;
   --paragraph-color-on-white: #381D2A;
   --paragraph-color-on-color: #FFFFFF;
-  --paragraph-background-color: #A43312;
 
   /* Button colors */
   --button-bg: #A43312;
@@ -32,6 +31,7 @@ body {
   padding: 0;
 }
 
+/* Header Styles */
 header {
   background-color: var(--primary-color);
   color: white;
@@ -61,6 +61,7 @@ header nav a:hover {
   color: var(--secondary-color);
 }
 
+/* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -81,6 +82,54 @@ footer a:hover {
 footer .social img {
   height: 30px;
   margin: 0 10px;
+}
+
+/* Card Image Styles for Consistency */
+.card-img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensure all images cover the area uniformly */
+  border-radius: 10px;
+  border: 10px solid #d9c2a3;
+  box-shadow: 5px 5px 10px #6f7364;
+  transition: transform 0.5s;
+}
+
+.card-img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.home-grid section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.home-grid img.icon {
+  width: 50px;
+  margin: 10px auto;
+  display: block;
+}
+
+.home-grid h2 {
+  color: var(--accent1-color);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.button-box a.book {
+  background-color: var(--button-bg);
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-box a.book:hover {
+  background-color: var(--button-hover-bg);
 }
 
 /* Wireframes Section */
@@ -106,22 +155,7 @@ footer .social img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Styles */
-.button-box a.book {
-  background-color: var(--button-bg);
-  padding: 15px 30px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.button-box a.book:hover {
-  background-color: var(--button-hover-bg);
-}
-
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -131,7 +165,16 @@ footer .social img {
     margin: 10px 0;
   }
 
+  .card-img {
+    height: 180px; /* Slightly smaller height for mobile */
+  }
+
   .wireframes img {
     width: 90%;
+  }
+
+  .home-grid section {
+    margin: 30px auto;
+    width: 80%;
   }
 }
