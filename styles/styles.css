@@ -23,7 +23,7 @@
   --button-hover-bg: #381D2A;
 }
 
-/* General Styles (applies to all pages) */
+/* General Styles */
 body {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
@@ -61,43 +61,21 @@ header nav a:hover {
   color: var(--secondary-color);
 }
 
-/* Footer Styles */
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer a:hover {
-  color: var(--accent1-color);
-}
-
-footer .social img {
-  height: 30px;
-  margin: 0 10px;
-}
-
-/* Card Image Styles for Consistency */
+/* Card Image Styles */
 .card-img {
   width: 100%;
-  height: 200px; /* Set a fixed height for consistency */
-  object-fit: cover; /* Ensure all images cover the area uniformly */
+  height: 250px; /* Set consistent height */
+  object-fit: cover; /* Ensure image covers the area without stretching */
+  object-position: center;
   border-radius: 10px;
-  border: 10px solid #d9c2a3;
+  border: 5px solid #d9c2a3;
   box-shadow: 5px 5px 10px #6f7364;
   transition: transform 0.5s;
 }
 
 .card-img:hover {
   opacity: 0.6;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .home-grid section {
@@ -125,7 +103,6 @@ footer .social img {
   color: white;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .button-box a.book:hover {
@@ -166,11 +143,7 @@ footer .social img {
   }
 
   .card-img {
-    height: 180px; /* Slightly smaller height for mobile */
-  }
-
-  .wireframes img {
-    width: 90%;
+    height: 180px; /* Adjust for mobile */
   }
 
   .home-grid section {
