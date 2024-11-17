@@ -1,3 +1,6 @@
+/* Import Typography Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
 :root {
   --heading-font: 'Roboto', sans-serif;
   --paragraph-font: 'Open Sans', sans-serif;
@@ -5,59 +8,58 @@
   --secondary-color: #E7C24F;
   --accent1-color: #A43312;
   --accent2-color: #381D2A;
+  --button-bg: #A43312;
+  --button-hover-bg: #381D2A;
 }
 
 body {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
+  color: #381D2A;
   margin: 0;
   padding: 0;
 }
 
 header {
   background-color: var(--primary-color);
-  color: white;
-  padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.card-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.5s;
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.card-img:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
-}
-
-.wireframes img {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+header nav a:hover {
+  color: var(--secondary-color);
 }
 
 footer {
   background-color: var(--primary-color);
-  color: white;
   text-align: center;
   padding: 20px;
 }
 
-footer a {
-  color: var(--secondary-color);
+footer .social img {
+  height: 30px;
+  margin: 5px;
 }
 
-footer a:hover {
-  color: var(--accent1-color);
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid #d9c2a3;
 }
 
-@media screen and (max-width: 768px) {
-  .card-img {
-    height: 200px;
-  }
+.wireframes img {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
