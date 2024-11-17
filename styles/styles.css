@@ -1,29 +1,12 @@
-/* Import Typography Styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
-
-/* CSS Variables for Consistent Colors and Typography */
 :root {
   --heading-font: 'Roboto', sans-serif;
   --paragraph-font: 'Open Sans', sans-serif;
-
-  /* Color variables */
   --primary-color: #396E94;
   --secondary-color: #E7C24F;
   --accent1-color: #A43312;
   --accent2-color: #381D2A;
-
-  /* Font colors */
-  --headline-color-on-white: #396E94;
-  --headline-color-on-color: #E7C24F;
-  --paragraph-color-on-white: #381D2A;
-  --paragraph-color-on-color: #FFFFFF;
-
-  /* Button colors */
-  --button-bg: #A43312;
-  --button-hover-bg: #381D2A;
 }
 
-/* General Styles (applies to all pages) */
 body {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
@@ -31,150 +14,50 @@ body {
   padding: 0;
 }
 
-/* Header Styles */
 header {
   background-color: var(--primary-color);
   color: white;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-header img.logo {
-  height: 50px;
-  margin-left: 20px;
+.card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s;
 }
 
-header nav {
-  margin-right: 20px;
+.card-img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
-header nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.wireframes img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-header nav a:hover {
-  color: var(--secondary-color);
-}
-
-/* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 footer a {
   color: var(--secondary-color);
-  text-decoration: none;
-  margin: 0 10px;
 }
 
 footer a:hover {
   color: var(--accent1-color);
 }
 
-footer .social img {
-  height: 30px;
-  margin: 0 10px;
-}
-
-/* Card Image Styles for Consistency */
-.card-img {
-  width: 100%;
-  height: 200px; /* Set a fixed height for consistency */
-  object-fit: cover; /* Ensure all images cover the area uniformly */
-  border-radius: 10px;
-  border: 10px solid #d9c2a3;
-  box-shadow: 5px 5px 10px #6f7364;
-  transition: transform 0.5s;
-}
-
-.card-img:hover {
-  opacity: 0.6;
-  transform: scale(1.1);
-}
-
-.home-grid section {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.home-grid img.icon {
-  width: 50px;
-  margin: 10px auto;
-  display: block;
-}
-
-.home-grid h2 {
-  color: var(--accent1-color);
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Button Styles */
-.button-box a.book {
-  background-color: var(--button-bg);
-  padding: 15px 30px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.button-box a.book:hover {
-  background-color: var(--button-hover-bg);
-}
-
-/* Wireframes Section */
-.wireframes {
-  padding: 40px 0;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-.wireframes h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.wireframes img {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px auto;
-  display: block;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  header nav {
-    margin: 10px 0;
-  }
-
   .card-img {
-    height: 180px; /* Slightly smaller height for mobile */
-  }
-
-  .wireframes img {
-    width: 90%;
-  }
-
-  .home-grid section {
-    margin: 30px auto;
-    width: 80%;
+    height: 200px;
   }
 }
