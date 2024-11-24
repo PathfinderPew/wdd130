@@ -63,3 +63,73 @@ footer .social img {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* Feedback Section Styles */
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  display: none;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+}
+
+.moveDown {
+  margin-top: 3em;
+}
+
+/* Contact Form Styles */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
+}
+
+form legend {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: var(--button-hover-bg);
+}
